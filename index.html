@@ -11,14 +11,22 @@
 
 <body>
     <div class="container mt-5">
+        <button class="btn btn-primary" onclick="getPosts()">Показать все посты</button>
         <div class="row post-list" mb-5>
-            <!-- <div class="card" style="width: 18rem">
-                <div class="card-body">
-                    <h5 class="carb-title">card title</h5>
-                    <p class="card-text">card text</p>
-                    <a href="" class="card-link">learn more...</a>
+            <!-- post's place -->
+        </div>
+        <div class="row col-12">
+            <div>
+                <div class="form-group">
+                    <label for="title">Заголовок поста</label>
+                    <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
                 </div>
-            </div> -->
+                <div class="form-group">
+                    <label for="body">Содержание поста</label>
+                    <textarea class="form-control" id="body"></textarea>
+                </div>
+                <button class="btn btn-primary" onclick="addPost()">Добавить пост</button>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>

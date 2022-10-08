@@ -45,36 +45,4 @@ if (isset($_GET['q'])) {
             }
             break;
     }
-
-
-    // if ($method === 'GET') {
-    //     if ($type === 'posts') {
-    //         if (isset($id)) {
-    //             Database::getPost($id);
-    //         } else {
-    //             Database::getPosts();
-    //         }
-    //     }
-    // } elseif ($method === 'POST') {
-    //     if ($type === 'posts') {
-    //         $input['title'] = htmlspecialchars(trim($_POST['title']));
-    //         $input['body'] = htmlspecialchars(trim($_POST['body']));
-    //         Database::addPost($input);
-    //     }
-    // } elseif ($method === 'PATCH') {
-    //     if ($type === 'posts') {
-    //         if (isset($id)) {
-    //             $data = file_get_contents('php://input');
-    //             $data = json_decode($data, true);
-
-    //             Database::updatePost($id, $data);
-    //         }
-    //     }
-    // } elseif ($method === 'DELETE') {
-    //     if ($type === 'posts') {
-    //         if (isset($id)) {
-    //             Database::deletePost($id);
-    //         }
-    //     }
-    // }
 }
